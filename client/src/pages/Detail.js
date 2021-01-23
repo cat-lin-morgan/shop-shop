@@ -15,6 +15,9 @@ import spinner from '../assets/spinner.gif'
 import Cart from '../components/Cart';
 import { idbPromise } from "../utils/helpers";
 
+// DELETE THIS LATER
+// import PaletteBuilder from '../alex/PaletteBuilder'
+
 function Detail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
@@ -107,6 +110,7 @@ function Detail() {
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          {/* <PaletteBuilder /> */}
         </div>
       ) : null}
       {

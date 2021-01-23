@@ -12,7 +12,7 @@ import {
     TOGGLE_CART
 } from './actions';
 
-export const reducer = (state, action) => {
+export const reducer = (state, action) => { //change here 
     switch (action.type) {
         //return a new state object with an updated products array
         case UPDATE_PRODUCTS:
@@ -78,6 +78,6 @@ export const reducer = (state, action) => {
     }
 }
 
-export function useProductReducer(initialState) {
+export function useProductReducer(initialState) { //will remove since we define intial state up top
     return useReducer(reducer, initialState);
 }
