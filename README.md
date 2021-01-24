@@ -11,7 +11,9 @@ MERN Application that uses Redux and GraphQL to manage state and fetch data from
 
 Refactored from React Context API to use Redux, application retains all of it's original functionality.
 
-**To Note:** I left the Global Context API code commented out in the files. I wanted to still be able to see and refernece the work I did with the API.
+It did not require sweeping changes. I changed the way my reducer worked, and how my App.js and several components depended on state.
+
+**To Note:** I left the Global Context API code commented out in the files. I wanted to still be able to see and refernece the work I did with the React Context API.
 
 ![javascript badge](https://img.shields.io/badge/We%20Stan-Javascript-brightgreen)
 ![node badge](https://img.shields.io/badge/Node-Over%20Here-blueviolet)
@@ -30,6 +32,20 @@ Code written by:
 ### Cat Lin (Caitlin) Morgan 
 
 [GitHub](https://github.com/cat-lin-morgan/) - plummorgan@gmail.com
+
+## Technology Used
+
+I used two npms, ['react-redux](https://www.npmjs.com/package/react-redux) && ['redux](https://www.npmjs.com/package/redux).
+
+I used ```createStore``` from the _redux package_ and the _hooks_ ```useDispatch``` and ```useSelector``` from the _react-redux package_.
+
+Below are screenshots of their usage.
+
+#### reducer.js
+<img src='./reducer.png' alt='Screenshot of the reducer file.' /> 
+
+#### Random Component 
+<img src='./to_state_or_not_to_state.png' alt='Screenshot of a component using Redux' /> 
 
 ## Screenshot 
 
