@@ -13,7 +13,7 @@ Refactored from React Context API to use Redux, application retains all of it's 
 
 It did not require sweeping changes. I changed the way my reducer worked, and how my App.js and several components depended on state.
 
-**To Note:** I left the Global Context API code commented out in the files. I wanted to still be able to see and refernece the work I did with the React Context API.
+**To Note:** I left the Global Context API code commented out in the files. I wanted to still be able to see and reference the work I did with the React Context API.
 
 ![javascript badge](https://img.shields.io/badge/We%20Stan-Javascript-brightgreen)
 ![node badge](https://img.shields.io/badge/Node-Over%20Here-blueviolet)
@@ -21,7 +21,7 @@ It did not require sweeping changes. I changed the way my reducer worked, and ho
 
 
 ## Deployed Application
-[Shop-shop deployed here!](https://shopy-shopy.herokuapp.com/), on Heroku.
+[Shop-shop deployed here](https://shopy-shopy.herokuapp.com/) on Heroku!
 
 Don't forget to star it.
 
@@ -35,9 +35,9 @@ Code written by:
 
 ## Technology Used
 
-I used two npms, ['react-redux](https://www.npmjs.com/package/react-redux) && ['redux](https://www.npmjs.com/package/redux).
+I used two npms, ['react-redux'](https://www.npmjs.com/package/react-redux) && ['react-redux'](https://www.npmjs.com/package/react-redux).
 
-I used ```createStore``` from the _redux package_ and the _hooks_ ```useDispatch``` and ```useSelector``` from the _react-redux package_.
+I used ```createStore``` from the [react-redux](https://www.npmjs.com/package/react-redux) and the **hooks** ```useDispatch``` and ```useSelector``` from the [react-redux](https://www.npmjs.com/package/react-redux).
 
 Below are screenshots of their usage.
 
