@@ -35,7 +35,7 @@ Code written by:
 
 ## Technology Used
 
-I used two npms, ['react-redux'](https://www.npmjs.com/package/react-redux) && ['react-redux'](https://www.npmjs.com/package/react-redux).
+I used two npms, ['redux'](https://www.npmjs.com/package/redux) && ['react-redux'](https://www.npmjs.com/package/react-redux).
 
 I used ```createStore``` from the [react-redux](https://www.npmjs.com/package/react-redux) and the **hooks** ```useDispatch``` and ```useSelector``` from the [react-redux](https://www.npmjs.com/package/react-redux).
 
