@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useQuery } from '@apollo/react-hooks';
+import { useSelector, useDispatch } from 'react-redux';
 
-import { useStoreContext } from '../../utils/GlobalState';
+// import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 
 import ProductItem from "../ProductItem";
@@ -11,10 +12,15 @@ import spinner from "../../assets/spinner.gif"
 import { idbPromise } from "../../utils/helpers";
 
 function ProductList() {
-  const [state, dispatch] = useStoreContext();
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
-  const { currentCategory } = state;
+  // const [state, dispatch] = useStoreContext();
   // const products = data?.products || [];
+  
+  const { loading, data } = useQuery(QUERY_PRODUCTS);
+  
+  const dispatch = useDispatch();
+  
+  const state = useSelector(state => state)
+  const { currentCategory } = state;
 
   useEffect(() => {
     if(data) {

@@ -1,5 +1,7 @@
 
-import { useReducer } from 'react';
+// import { useReducer } from 'react';
+import {createStore} from 'redux';
+
 import {
     UPDATE_PRODUCTS,
     UPDATE_CATEGORIES,
@@ -12,7 +14,16 @@ import {
     TOGGLE_CART
 } from './actions';
 
-export const reducer = (state, action) => { //change here 
+const initialState = {
+    products: [],
+    cart: [],
+    cartOpen: false,
+    categories: [],
+    currentCategory: '',
+};
+
+
+export const reducer = (state = initialState, action) => { //change here 
     switch (action.type) {
         //return a new state object with an updated products array
         case UPDATE_PRODUCTS:
@@ -78,6 +89,8 @@ export const reducer = (state, action) => { //change here
     }
 }
 
-export function useProductReducer(initialState) { //will remove since we define intial state up top
-    return useReducer(reducer, initialState);
-}
+export const store = createStore(reducer);
+
+// export function useProductReducer(initialState) { //will remove since we define intial state up top
+//     return useReducer(reducer, initialState);
+// }
